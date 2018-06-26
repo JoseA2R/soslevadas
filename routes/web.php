@@ -11,5 +11,6 @@
 |
 */
 
+Route::get('/sidebar2','WebpagesController@sidebar');
 Route::get('/','WebpagesController@index');
 
