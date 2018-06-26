@@ -11,4 +11,10 @@ class WebpagesController extends Controller
         //return view('pages.index',compact('title'));
         return view('sidebar')->with('title',$title);
     }
+
+    public function sidebar(){
+        $title = 'SOSLevadas';
+        //return view('pages.index',compact('title'));
+        return view('sidebar2')->with('title',$title);
+    }
 }
