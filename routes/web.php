@@ -10,7 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/sidebar2','WebpagesController@sidebar');
+Route::get('/app','WebpagesController@app');
+Route::get('/Contactos','WebpagesController@Contactos');
+Route::get('/SOS','WebpagesController@SOSapp');
+Route::get('/sidebar','WebpagesController@sidebar');
 Route::get('/','WebpagesController@index');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

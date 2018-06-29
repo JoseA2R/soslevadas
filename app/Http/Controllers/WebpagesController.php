@@ -15,6 +15,24 @@ class WebpagesController extends Controller
     public function sidebar(){
         $title = 'SOSLevadas';
         //return view('pages.index',compact('title'));
-        return view('sidebar2')->with('title',$title);
+        return view('sidebar')->with('title',$title);
     }
+
+    public function Contactos(){
+        $title = 'SOSLevadas';
+        //return view('pages.index',compact('title'));
+        return view('pages.Contactos')->with('title',$title);
+    }
+
+    public function SOSapp(){
+        $title = 'SOSLevadas';
+        //return view('pages.index',compact('title'));
+        return view('pages.SOSapp')->with('title',$title);
+    }
+
+    public function app(){
+        $title = 'app';
+        return view('layouts.app')->with('title',$title);
+    }
+
 }

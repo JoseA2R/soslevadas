@@ -63,7 +63,7 @@ window.onload = function(){
                        createParticule(i);       
                    }
                    else{ // sinon on la deplace
-                       p.y -= p.s / 90;  //vitesse en fonction de la taille                           
+                       p.y -= p.s / 100;  //vitesse en fonction de la taille                           
                        p.x += Math.cos( p.o );
    
                        particles[i] = {
@@ -92,7 +92,7 @@ window.onload = function(){
                ctx.canvas.height = H;
    
                //particles
-               var mp        = 10; //max particles
+               var mp        = 20; //max particles
                var img       = new Image;
                var particles = [];
    

@@ -11,19 +11,29 @@
  }
  
  .sidebar .item i {
-   font-size: 24px;
-   margin-top: -5px !important;
- }
+  font-size: 30px;
+   display:flex !important;
+ justify-content:center;
+ align-items:center;
+  padding-top:5px;
+  margin-top:5px;
+ 
+}
  
  .logo {
    height: 48px !important;
-   padding: 10px !important;
+   
+   padding-bottom: 57px !important;
  }
  
  .logo img {
    width: 100% !important;
    height: 38px !important;
- }
+   font-size: 40px !important;
+   margin-bottom: 30px !important;
+  }
+ 
+ 
  
  .title.item {
    padding: .92857143em 1.14285714em !important;
@@ -80,8 +90,9 @@
 .modal-content {
   background-color: #fefefe00;
  
-  
+  margin-top: 7px;
   border: 1px solid rgba(136, 136, 136, 0);
+ 
   
 }
 
@@ -205,4 +216,19 @@
 
   border: 1px solid white !important;
  border-radius: 10px;
+}
+
+.inputWithIcon input[type=text]{
+  padding-left:40px;
+}
+
+.inputWithIcon{
+  position: relative;
+}
+
+.inputWithIcon i{
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding:9px 8px;
 }
